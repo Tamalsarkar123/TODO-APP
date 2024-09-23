@@ -1,0 +1,95 @@
+*{ 
+    background-image:linear-gradient(to top, #ff5f6d, #ffc371);
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.to-div{
+   
+    width: 24rem;
+    height: 20rem;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 2px 1px 8px black;
+    border-radius: 10px;
+    padding:3px;
+}
+
+.to-item{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);  /* Adjust the proportions as needed */
+    align-items: center;
+    height: 40px;
+    gap: 10px; /* Adds space between the columns */
+    border-bottom: 1px solid #2e2e2e; /* Optional: Add a border between tasks */
+    padding: 0 10px; 
+}
+
+.tsk-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Shorten long text with an ellipsis */
+}
+
+.tsk-name, .date, .delete {
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Ensure all text starts from the left */
+}
+.tsk-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.date {
+    text-align: center;
+}
+
+.delete {
+    justify-self: end; /* Align the delete button to the right */
+}
+.bt{
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 6px 12px 6px;
+    /* background:#ffc371; */
+    background:black;
+    color:white;
+    font-weight: 700;
+    border:none;
+}
+
+.bt:hover{
+    
+    border:1px solid white;
+}
+
+li{
+    list-style-type: circle;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+}
+.date{
+    list-style-type: none;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inp{
+    outline: none;
+    border-radius: 6px;
+    background:white;
+    border: none;
+    padding: 4px 10px 4px;
+}
+
+.inp:hover{
+    border:1px solid black;
+}
